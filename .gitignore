@@ -1,0 +1,18 @@
+# استثناء مجلد node_modules داخل client
+client/node_modules/
+
+# استثناء بيئة بايثون الافتراضية
+venv/
+
+# استثناء ملفات النظام المؤقتة
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# استثناء ملفات npm lock
+package-lock.json
+client/package-lock.json
+
+# استثناء ملفات build
+client/build/ 
