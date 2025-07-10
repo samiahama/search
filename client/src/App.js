@@ -6,6 +6,12 @@ const DATASETS = [
   { value: "msmarco", label: "MSMARCO" },
 ];
 
+const SEARCH_TYPES = [
+  { value: "tfidf", label: "TF-IDF" },
+  { value: "embedding", label: "Embedding" },
+  { value: "hybrid", label: "Hybrid" },
+];
+
 function smartRepType(query) {
   return "tfidf";
 }
@@ -16,6 +22,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [dataset, setDataset] = useState("miracl_ar");
+  const [searchType, setSearchType] = useState("tfidf");
   const [expanded, setExpanded] = useState({});
 
   const handleSearch = async (e) => {
@@ -23,12 +30,11 @@ function App() {
     setLoading(true);
     setError("");
     setResults([]);
-    const repType = smartRepType(query);
     try {
       const res = await fetch(
         `http://localhost:5000/api/search?query=${encodeURIComponent(
           query
-        )}&type=${repType}&dataset=${dataset}`
+        )}&type=${searchType}&dataset=${dataset}`
       );
       if (!res.ok) throw new Error("فشل الاتصال بالسيرفر");
       const data = await res.json();
@@ -155,6 +161,7 @@ function App() {
             display: "flex",
             justifyContent: "center",
             marginBottom: 30,
+            gap: 12,
           }}
         >
           <select
@@ -178,6 +185,30 @@ function App() {
             {DATASETS.map((d) => (
               <option key={d.value} value={d.value}>
                 {d.label}
+              </option>
+            ))}
+          </select>
+          <select
+            value={searchType}
+            onChange={(e) => setSearchType(e.target.value)}
+            style={{
+              fontSize: 17,
+              padding: "10px 28px",
+              borderRadius: 20,
+              border: "1.5px solid #e3eafc",
+              background: "#f8fafc",
+              color: "#4285f4",
+              fontWeight: 600,
+              boxShadow: "0 1px 4px #e3f0ff",
+              margin: "0 auto",
+              outline: "none",
+              minWidth: 180,
+              textAlign: "center",
+            }}
+          >
+            {SEARCH_TYPES.map((t) => (
+              <option key={t.value} value={t.value}>
+                {t.label}
               </option>
             ))}
           </select>
