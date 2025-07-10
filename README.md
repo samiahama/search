@@ -103,3 +103,35 @@ npm start
 ## 📞 **الدعم والمساهمة**
 
 لأي استفسار أو مساهمة، يمكنك فتح Issue أو Pull Request على GitHub.
+
+---
+
+## 📒 **تشغيل Jupyter Notebook لتقييم النظام**
+
+### 1. تثبيت Jupyter (إذا لم يكن مثبتًا)
+
+```bash
+pip install notebook
+```
+
+### 2. تشغيل Jupyter في مجلد المشروع
+
+```bash
+jupyter notebook
+```
+
+- ستفتح نافذة في المتصفح تعرض ملفات المجلد.
+- شغّل الملف `Untitled.ipynb` (أو أي ملف Notebook آخر يحوي أكواد التقييم).
+- نفّذ الخلايا بالترتيب (Shift+Enter) لمشاهدة نتائج التقييم.
+
+### 3. مثال عملي:
+
+- تأكد أن خادم البحث (Flask) يعمل (`python app.py`).
+- افتح Jupyter Notebook:
+  ```bash
+  jupyter notebook
+  ```
+- افتح الملف `Untitled.ipynb`.
+- نفّذ الخلايا لمشاهدة نتائج التقييم (الدقة، الاسترجاع، MAP).
+
+---
