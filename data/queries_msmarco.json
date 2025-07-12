@@ -1,0 +1,70 @@
+[
+  {
+    "query": "what is machine learning",
+    "relevant_docs": ["doc1", "doc2", "doc3"]
+  },
+  {
+    "query": "artificial intelligence history",
+    "relevant_docs": ["doc4", "doc5"]
+  },
+  {
+    "query": "python programming tutorial",
+    "relevant_docs": ["doc6", "doc7", "doc8"]
+  },
+  {
+    "query": "deep learning neural networks",
+    "relevant_docs": ["doc9", "doc10"]
+  },
+  { "query": "data science applications", "relevant_docs": ["doc11", "doc12"] },
+  {
+    "query": "natural language processing",
+    "relevant_docs": ["doc13", "doc14", "doc15"]
+  },
+  {
+    "query": "computer vision techniques",
+    "relevant_docs": ["doc16", "doc17"]
+  },
+  {
+    "query": "big data analytics",
+    "relevant_docs": ["doc18", "doc19", "doc20"]
+  },
+  { "query": "cloud computing services", "relevant_docs": ["doc21", "doc22"] },
+  {
+    "query": "cybersecurity best practices",
+    "relevant_docs": ["doc23", "doc24", "doc25"]
+  },
+  { "query": "blockchain technology", "relevant_docs": ["doc26", "doc27"] },
+  {
+    "query": "internet of things IoT",
+    "relevant_docs": ["doc28", "doc29", "doc30"]
+  },
+  {
+    "query": "virtual reality applications",
+    "relevant_docs": ["doc31", "doc32"]
+  },
+  {
+    "query": "augmented reality development",
+    "relevant_docs": ["doc33", "doc34", "doc35"]
+  },
+  { "query": "quantum computing basics", "relevant_docs": ["doc36", "doc37"] },
+  {
+    "query": "robotics and automation",
+    "relevant_docs": ["doc38", "doc39", "doc40"]
+  },
+  {
+    "query": "software development methodologies",
+    "relevant_docs": ["doc41", "doc42"]
+  },
+  {
+    "query": "database management systems",
+    "relevant_docs": ["doc43", "doc44", "doc45"]
+  },
+  {
+    "query": "web development frameworks",
+    "relevant_docs": ["doc46", "doc47"]
+  },
+  {
+    "query": "mobile app development",
+    "relevant_docs": ["doc48", "doc49", "doc50"]
+  }
+]
