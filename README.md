@@ -23,11 +23,16 @@
 
 ### مكتبات بايثون:
 
+
 ```bash
 pip install flask flask-cors numpy scikit-learn sentence-transformers
 ```
 
+
+
 ### مكتبات React:
+
+
 
 ```bash
 cd client
