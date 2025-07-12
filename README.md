@@ -163,5 +163,6 @@ k: 10
 متوسط متوسط الدقة (MAP): 0.7200
 ==================================================
 ```
-
+#تنزيل الداتا سيت من خلال الأداة غوغل كولاب 
+-https://colab.research.google.com/drive/1G6I1qlOGCjCg_BV3jp2H-onQj_GrGOQR?usp=sharing 
 ---
